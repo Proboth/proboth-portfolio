@@ -3,9 +3,6 @@ import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-  base: "/react-home/",   // ✅ GitHub repo name
-  plugins: [
-    react(),
-    tailwindcss(),
-  ],
+  base: "/react-home/", // 👈 MUST match repo name
+  plugins: [react(), tailwindcss()],
 });
