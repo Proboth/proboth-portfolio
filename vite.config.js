@@ -3,6 +3,6 @@ import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-  base: "/react-home/", // 👈 MUST match repo name
+  base: "/proboth-portfolio/", // 👈 MUST match repo name
   plugins: [react(), tailwindcss()],
 });
