@@ -172,8 +172,8 @@ function Hero() {
             View Projects
           </a>
 
-   <a
-  href={`${import.meta.env.BASE_URL}Proboth_Ravihara_Resume.pdf`}
+ <a
+  href="/portfolio/Proboth_Ravihara_Resume.pdf"
   download
   className="px-6 py-3 rounded-md font-medium
              border border-gray-300 dark:border-gray-700
@@ -183,6 +183,7 @@ function Hero() {
 >
   Download Resume
 </a>
+
 
 
         </motion.div>
