@@ -174,8 +174,7 @@ function Hero() {
 
  <a
   href="/proboth-portfolio/Proboth_Ravihara_Resume.pdf"
-  download
-  className="px-6 py-3 rounded-md font-medium
+  download className="px-6 py-3 rounded-md font-medium
              border border-gray-300 dark:border-gray-700
              text-gray-800 dark:text-gray-200
              hover:bg-gray-100 dark:hover:bg-gray-800
@@ -183,6 +182,7 @@ function Hero() {
 >
   Download Resume
 </a>
+
 
 
 
