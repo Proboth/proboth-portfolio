@@ -2,7 +2,7 @@
  "name": "proboth-portfolio",
  "private": true,
  "version": "0.0.0",
-"homepage": "https://proboth.github.io/proboth-portfolio",
+ "homepage": "https://proboth.github.io/proboth-portfolio",
  "type": "module",
  "scripts": {
   "dev": "vite",

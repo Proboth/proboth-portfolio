@@ -172,17 +172,15 @@ function Hero() {
             View Projects
           </a>
 
-<button
-  onClick={downloadResume}
-  className="px-6 py-3 rounded-md font-medium
-                       bg-gradient-to-r from-indigo-600 to-purple-600
-                       text-white shadow-lg
-                       hover:shadow-indigo-500/40
-                       hover:-translate-y-1 hover:scale-[1.02]
-                       transition-all duration-300 "
+<a
+  href="/proboth-portfolio/Proboth_Ravihara_Resume.pdf"
+  download
+  className="px-6 py-3 rounded-full border border-cyan-400
+             hover:bg-cyan-400 hover:text-black transition"
 >
   Download Resume
-</button>
+</a>
+
 
 
 
@@ -214,39 +212,6 @@ function Hero() {
   );
 }
 
-const downloadResume = async () => {
-  // IMPORTANT: use BASE_URL for GitHub Pages
-  const fileUrl = `${import.meta.env.BASE_URL}Proboth_Ravihara_Resume.pdf`;
-
-  try {
-    const response = await fetch(fileUrl);
-
-    if (!response.ok) {
-      throw new Error(`Failed to fetch file: ${response.status}`);
-    }
-
-    const blob = await response.blob();
-    const blobUrl = window.URL.createObjectURL(blob);
-
-    const link = document.createElement("a");
-    link.href = blobUrl;
-    link.download = "Proboth_Ravihara_Resume.pdf";
-
-    document.body.appendChild(link);
-    link.click();
-
-    // Cleanup
-    setTimeout(() => {
-      window.URL.revokeObjectURL(blobUrl);
-      link.remove();
-    }, 1000);
-
-  } catch (error) {
-    console.error("Resume download failed:", error);
-    // Fallback: open in new tab
-    window.open(fileUrl, "_blank", "noopener");
-  }
-};
 
 
 export default Hero;
