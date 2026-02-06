@@ -12,15 +12,15 @@ const projects = [
     title: "The Coral Residences Maldives",
     description:
       "Custom Wordpress Theme Develop fully Admin Function  ",
-    image: project1,
+    image:null,
     tech: ["php", "Sass", "MySQL","Wordpress","Bootstrap",],
     liveUrl: "https://coralresidences.com/",
   },
       {
     title: "PMS System",
     description:
-      "Hotel and Resorts",
-    image: project2,
+      "Hotel and Resorts", 
+    image:"project2",
     tech: ["PHP", "CSS3 / Tailwind CSS","MYSQL","JavaScript (ES6+)","PHP (CodeIgniter 4)"],
     liveUrl: "#",
   },
@@ -28,7 +28,7 @@ const projects = [
     title: "Aura Maldives",
     description:
       "Custom Wordpress Theme Develop fully Admin Function",
-    image: project1,
+    image:null,
     tech: ["php", "Sass", "MySQL","Wordpress","Bootstrap",],
     liveUrl: "https://aura-maldives.com/",
   },
@@ -36,7 +36,7 @@ const projects = [
     title: "DirectFlights",
     description:
       "Flight Booking and Travel Agency Website",
-    image: project1,
+    image:null,
     tech: ["Wordpress", "css", "Javascript",],
     liveUrl: "https://directflights.net/",
   },
@@ -44,7 +44,7 @@ const projects = [
     title: "Ezy Healthcare",
     description:
       "Medical tourism website",
-    image: project1,
+    image:null,
     tech: ["Wordpress", "css", "Javascript",],
     liveUrl: "https://ezyhealthcare.net/",
   },
@@ -53,7 +53,7 @@ const projects = [
     title: "Ezy Travellers",
     description:
       "Travel Agency Website",
-    image: project1,
+    image:null,
     tech: ["Wordpress", "css", "Javascript",],
     liveUrl: "https://ezytravellers.com/",
   },
