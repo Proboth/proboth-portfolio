@@ -3,7 +3,7 @@ import { useState } from "react";
 
 // Project images
 import project1 from "../assets/projects/project1.svg";
-import project2 from "../assets/projects/project2.svg";
+import project2 from "../assets/projects/PMS.png";
 import project3 from "../assets/projects/project3.svg";
 // import more projects as needed
 
@@ -108,19 +108,21 @@ function Projects() {
               {/* Image + Preview Overlay */}
               <div className="relative h-40 overflow-hidden rounded-t-2xl">
     
-    <img
+ <img
   src={
-    project.image
-      ? project.image // ✅ local image if provided
-      : `https://api.microlink.io/?screenshot=true&meta=false&embed=screenshot.url&url=${encodeURIComponent(
+    project.liveUrl
+      ? `https://api.microlink.io/?screenshot=true&meta=false&embed=screenshot.url&url=${encodeURIComponent(
           project.liveUrl
-        )}` // 🌐 fallback to live screenshot
+        )}`
+      : project.image
   }
   alt={project.title}
-  className="w-full h-full object-cover
-             group-hover:scale-110
-             transition-transform duration-700"
+  className="w-full h-full object-cover"
+  onError={(e) => {
+    e.currentTarget.src = project.image || "/fallback.png";
+  }}
 />
+
 
                 {/* Hover Overlay */}
                 <div
