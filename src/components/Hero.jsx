@@ -173,7 +173,7 @@ function Hero() {
           </a>
 
  <a
-  href="/proboth-portfolio/Proboth_Ravihara_Resume.pdf"
+  href="https://github.com/Proboth/proboth-portfolio/blob/4ac3e60847af50eda99c4ec05fe7cdd374daa78f/public/Proboth_Ravihara_Resume.pdf"
   download className="px-6 py-3 rounded-md font-medium
              border border-gray-300 dark:border-gray-700
              text-gray-800 dark:text-gray-200
