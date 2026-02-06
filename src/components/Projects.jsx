@@ -20,7 +20,7 @@ const projects = [
     title: "PMS System",
     description:
       "Hotel and Resorts",
-    image: project1,
+    image: project2,
     tech: ["PHP", "CSS3 / Tailwind CSS","MYSQL","JavaScript (ES6+)","PHP (CodeIgniter 4)"],
     liveUrl: "https://ezytravellers.com/",
   },

@@ -174,8 +174,12 @@ function Hero() {
 
 <button
   onClick={downloadResume}
-  className="px-6 py-3 rounded-full border border-cyan-400
-             hover:bg-cyan-400 hover:text-black transition"
+  className="px-6 py-3 rounded-md font-medium
+                       bg-gradient-to-r from-indigo-600 to-purple-600
+                       text-white shadow-lg
+                       hover:shadow-indigo-500/40
+                       hover:-translate-y-1 hover:scale-[1.02]
+                       transition-all duration-300 "
 >
   Download Resume
 </button>
