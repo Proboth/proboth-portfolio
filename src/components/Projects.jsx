@@ -16,14 +16,20 @@ const projects = [
     tech: ["php", "Sass", "MySQL","Wordpress","Bootstrap",],
     liveUrl: "https://coralresidences.com/",
   },
-      {
-    title: "PMS System",
-    description:
-      "Hotel and Resorts", 
-    image:"project2",
-    tech: ["PHP", "CSS3 / Tailwind CSS","MYSQL","JavaScript (ES6+)","PHP (CodeIgniter 4)"],
-    liveUrl: "#",
-  },
+   {
+  title: "PMS System",
+  description: "Hotel and Resorts",
+  image: project2,   
+  tech: [
+    "PHP",
+    "CSS3 / Tailwind CSS",
+    "MySQL",
+    "JavaScript (ES6+)",
+    "CodeIgniter 4"
+  ],
+  liveUrl: null,
+},
+
   {
     title: "Aura Maldives",
     description:
@@ -108,7 +114,8 @@ function Projects() {
               {/* Image + Preview Overlay */}
               <div className="relative h-40 overflow-hidden rounded-t-2xl">
     
- <img
+<img
+  loading="lazy"
   src={
     project.liveUrl
       ? `https://api.microlink.io/?screenshot=true&meta=false&embed=screenshot.url&url=${encodeURIComponent(
@@ -119,6 +126,7 @@ function Projects() {
   alt={project.title}
   className="w-full h-full object-cover"
   onError={(e) => {
+    e.currentTarget.onerror = null;
     e.currentTarget.src = project.image || "/fallback.png";
   }}
 />
