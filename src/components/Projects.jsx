@@ -22,7 +22,7 @@ const projects = [
       "Hotel and Resorts",
     image: project2,
     tech: ["PHP", "CSS3 / Tailwind CSS","MYSQL","JavaScript (ES6+)","PHP (CodeIgniter 4)"],
-    liveUrl: "https://ezytravellers.com/",
+    liveUrl: "#",
   },
   {
     title: "Aura Maldives",
@@ -108,18 +108,20 @@ function Projects() {
               {/* Image + Preview Overlay */}
               <div className="relative h-40 overflow-hidden rounded-t-2xl">
     
-        <img
-  src={`https://api.microlink.io/?screenshot=true&meta=false&embed=screenshot.url&url=${encodeURIComponent(
-    project.liveUrl
-  )}`}
+    <img
+  src={
+    project.image
+      ? project.image // ✅ local image if provided
+      : `https://api.microlink.io/?screenshot=true&meta=false&embed=screenshot.url&url=${encodeURIComponent(
+          project.liveUrl
+        )}` // 🌐 fallback to live screenshot
+  }
   alt={project.title}
-  loading="lazy"
-  className="
-    w-full h-full object-cover
-    group-hover:scale-110
-    transition-transform duration-700
-  "
+  className="w-full h-full object-cover
+             group-hover:scale-110
+             transition-transform duration-700"
 />
+
                 {/* Hover Overlay */}
                 <div
                   className="
