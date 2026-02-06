@@ -16,6 +16,14 @@ const projects = [
     tech: ["php", "Sass", "MySQL","Wordpress","Bootstrap",],
     liveUrl: "https://coralresidences.com/",
   },
+      {
+    title: "PMS System",
+    description:
+      "Hotel and Resorts",
+    image: project1,
+    tech: ["PHP", "CSS3 / Tailwind CSS","MYSQL","JavaScript (ES6+)","PHP (CodeIgniter 4)"],
+    liveUrl: "https://ezytravellers.com/",
+  },
   {
     title: "Aura Maldives",
     description:
@@ -59,8 +67,7 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="py-28 bg-white dark:bg-gray-900 scroll-mt-24"
-    >
+      className="py-28 bg-white dark:bg-gray-900 scroll-mt-24">
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Section Header */}
