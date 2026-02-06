@@ -172,16 +172,14 @@ function Hero() {
             View Projects
           </a>
 
- <a
-  href="https://github.com/Proboth/proboth-portfolio/blob/4ac3e60847af50eda99c4ec05fe7cdd374daa78f/public/Proboth_Ravihara_Resume.pdf"
-  download className="px-6 py-3 rounded-md font-medium
-             border border-gray-300 dark:border-gray-700
-             text-gray-800 dark:text-gray-200
-             hover:bg-gray-100 dark:hover:bg-gray-800
-             transition-all duration-300"
+<button
+  onClick={downloadResume}
+  className="px-6 py-3 rounded-full border border-cyan-400
+             hover:bg-cyan-400 hover:text-black transition"
 >
   Download Resume
-</a>
+</button>
+
 
 
 
@@ -211,5 +209,40 @@ function Hero() {
     </section>
   );
 }
+
+const downloadResume = async () => {
+  // IMPORTANT: use BASE_URL for GitHub Pages
+  const fileUrl = `${import.meta.env.BASE_URL}Proboth_Ravihara_Resume.pdf`;
+
+  try {
+    const response = await fetch(fileUrl);
+
+    if (!response.ok) {
+      throw new Error(`Failed to fetch file: ${response.status}`);
+    }
+
+    const blob = await response.blob();
+    const blobUrl = window.URL.createObjectURL(blob);
+
+    const link = document.createElement("a");
+    link.href = blobUrl;
+    link.download = "Proboth_Ravihara_Resume.pdf";
+
+    document.body.appendChild(link);
+    link.click();
+
+    // Cleanup
+    setTimeout(() => {
+      window.URL.revokeObjectURL(blobUrl);
+      link.remove();
+    }, 1000);
+
+  } catch (error) {
+    console.error("Resume download failed:", error);
+    // Fallback: open in new tab
+    window.open(fileUrl, "_blank", "noopener");
+  }
+};
+
 
 export default Hero;
