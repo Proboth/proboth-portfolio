@@ -173,14 +173,14 @@ function Hero() {
           </a>
 
 <a
-  href="/proboth-portfolio/Proboth_Ravihara_Resume_new.pdf"
+  href={`${import.meta.env.BASE_URL}Proboth_Ravihara_Resume_new.pdf`}
   download
   className="px-6 py-3 rounded-md font-medium
-                       bg-gradient-to-r from-indigo-600 to-purple-600
-                       text-white shadow-lg
-                       hover:shadow-indigo-500/40
-                       hover:-translate-y-1 hover:scale-[1.02]
-                       transition-all duration-300"
+             bg-gradient-to-r from-indigo-600 to-purple-600
+             text-white shadow-lg
+             hover:shadow-indigo-500/40
+             hover:-translate-y-1 hover:scale-[1.02]
+             transition-all duration-300"
 >
   Download Resume
 </a>
