@@ -187,7 +187,12 @@ function Hero() {
   href={`${import.meta.env.BASE_URL}Proboth_Ravihara_Resume_new.pdf`}
   download
   onClick={() => {
-    window.gtag('event', 'resume_download');
+    if (window.gtag) {
+      window.gtag('event', 'resume_download', {
+        event_category: 'engagement',
+        event_label: 'Resume Download'
+      });
+    }
   }}
   className="px-6 py-3 rounded-md font-medium
              bg-gradient-to-r from-indigo-600 to-purple-600
@@ -198,6 +203,7 @@ function Hero() {
 >
   Download Resume
 </a>
+
 
 
 
