@@ -1,6 +1,6 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useEffect, useState } from "react";
-import profileImg from "../assets/photo.jpeg";
+import profileImg from "../assets/profile.png";
 
 function Hero() {
   /* ================= PARALLAX ================= */
@@ -90,19 +90,21 @@ function Hero() {
         className="max-w-4xl mx-auto px-6 text-center relative z-10"
       >
         {/* Profile Image */}
-        <motion.div
-          variants={item}
-          className="relative mx-auto mb-8 w-32 h-32"
-        >
-      
-          <img
-            src={profileImg}
-            alt="Proboth Ravihara"
-            className="relative w-32 h-32 rounded-full object-cover
-                       border-2 border-white dark:border-gray-800
-                       hover:scale-105 transition-transform duration-300"
-          />
-        </motion.div>
+ <motion.div
+  variants={item}
+  className="relative mx-auto mb-8 w-32 h-32 rounded-full overflow-hidden"
+>
+  <img
+    src={profileImg}
+    alt="Proboth Ravihara"
+    className="w-full h-full object-cover
+               object-[50%_25%]
+               scale-120
+               transition-transform duration-500
+               hover:scale-135"
+/>
+</motion.div>
+
 
         {/* Intro */}
         <motion.p
@@ -204,7 +206,7 @@ function Hero() {
     repeat: Infinity,
     ease: "easeInOut",
   }}
-  className="mt-20 flex flex-col items-center
+  className="mt-16 flex flex-col items-center
              text-xs tracking-widest
              text-gray-500 dark:text-gray-400"
 >

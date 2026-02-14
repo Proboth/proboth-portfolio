@@ -55,6 +55,17 @@ function Contact() {
             </a>
           </div>
         </motion.div>
+        <a
+  href="https://www.linkedin.com/in/proboth-ravihara-84131818b/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BkudWt3EdSpegQsWHomM9KQ%3D%3D"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block mt-8 px-6 py-3
+             bg-indigo-600 text-white rounded-md
+             hover:bg-indigo-700 transition"
+>
+  View More on LinkedIn
+</a>
+
 
       </div>
     </section>
