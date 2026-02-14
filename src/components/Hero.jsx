@@ -162,21 +162,38 @@ function Hero() {
           variants={item}
           className="mt-10 flex justify-center gap-6"
         >
-          <a
-            href="#projects"
-            className="px-6 py-3 rounded-md font-medium
-                       bg-gradient-to-r from-indigo-600 to-purple-600
-                       text-white shadow-lg
-                       hover:shadow-indigo-500/40
-                       hover:-translate-y-1 hover:scale-[1.02]
-                       transition-all duration-300"
-          >
-            View Projects
-          </a>
+         <a
+  href="#projects"
+  onClick={() => {
+    if (window.gtag) {
+      window.gtag('event', 'view_projects_click', {
+        event_category: 'engagement',
+        event_label: 'View Projects Button'
+      });
+    }
+  }}
+  className="px-6 py-3 rounded-md font-medium
+             bg-gradient-to-r from-indigo-600 to-purple-600
+             text-white shadow-lg
+             hover:shadow-indigo-500/40
+             hover:-translate-y-1 hover:scale-[1.02]
+             transition-all duration-300"
+>
+  View Projects
+</a>
+
 
 <a
   href={`${import.meta.env.BASE_URL}Proboth_Ravihara_Resume_new.pdf`}
   download
+  onClick={() => {
+    if (window.gtag) {
+      window.gtag('event', 'resume_download', {
+        event_category: 'engagement',
+        event_label: 'Resume Download'
+      });
+    }
+  }}
   className="px-6 py-3 rounded-md font-medium
              bg-gradient-to-r from-indigo-600 to-purple-600
              text-white shadow-lg
@@ -186,6 +203,7 @@ function Hero() {
 >
   Download Resume
 </a>
+
 
 
 
