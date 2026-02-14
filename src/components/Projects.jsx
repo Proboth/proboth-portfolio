@@ -63,6 +63,15 @@ const projects = [
     tech: ["Wordpress", "css", "Javascript",],
     liveUrl: "https://ezytravellers.com/",
   },
+
+   {
+    title: "EDUK8U",
+    description:
+      "Educational Website",
+    image:null,
+    tech: ["Wordpress", "css", "Javascript",],
+    liveUrl: "https://www.eduk8u.com/",
+  },
   
     {
     title: "RD Entertainments",
