@@ -37,12 +37,12 @@ Error generating stack: `+l.message+`
                      bg-gradient-to-r from-indigo-500 to-purple-500`}),w.jsxs(Bt.h2,{variants:m,className:`mt-6 text-xl md:text-2xl\r
                      text-gray-700 dark:text-gray-300\r
                      min-h-[2.5rem]`,children:[w.jsx("span",{className:"text-indigo-600 dark:text-indigo-400",children:f}),w.jsx("span",{className:"ml-1 animate-pulse",children:"|"})]}),w.jsx(Bt.p,{variants:m,className:`mt-6 max-w-xl mx-auto\r
-                     text-gray-600 dark:text-gray-400 leading-relaxed`,children:"I build scalable, high-performance web applications — crafting clean user interfaces with React and building reliable backend systems with modern APIs and databases."}),w.jsxs(Bt.div,{variants:m,className:"mt-10 flex justify-center gap-6",children:[w.jsx("a",{href:"#projects",className:`px-6 py-3 rounded-md font-medium\r
-                       bg-gradient-to-r from-indigo-600 to-purple-600\r
-                       text-white shadow-lg\r
-                       hover:shadow-indigo-500/40\r
-                       hover:-translate-y-1 hover:scale-[1.02]\r
-                       transition-all duration-300`,children:"View Projects"}),w.jsx("a",{href:"/proboth-portfolio/Proboth_Ravihara_Resume_new.pdf",download:!0,className:`px-6 py-3 rounded-md font-medium\r
+                     text-gray-600 dark:text-gray-400 leading-relaxed`,children:"I build scalable, high-performance web applications — crafting clean user interfaces with React and building reliable backend systems with modern APIs and databases."}),w.jsxs(Bt.div,{variants:m,className:"mt-10 flex justify-center gap-6",children:[w.jsx("a",{href:"#projects",onClick:()=>{window.gtag&&window.gtag("event","view_projects_click",{event_category:"engagement",event_label:"View Projects Button"})},className:`px-6 py-3 rounded-md font-medium\r
+             bg-gradient-to-r from-indigo-600 to-purple-600\r
+             text-white shadow-lg\r
+             hover:shadow-indigo-500/40\r
+             hover:-translate-y-1 hover:scale-[1.02]\r
+             transition-all duration-300`,children:"View Projects"}),w.jsx("a",{href:"/proboth-portfolio/Proboth_Ravihara_Resume_new.pdf",download:!0,onClick:()=>{window.gtag&&window.gtag("event","resume_download",{event_category:"engagement",event_label:"Resume Download"})},className:`px-6 py-3 rounded-md font-medium\r
              bg-gradient-to-r from-indigo-600 to-purple-600\r
              text-white shadow-lg\r
              hover:shadow-indigo-500/40\r
