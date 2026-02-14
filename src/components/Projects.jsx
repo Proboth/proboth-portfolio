@@ -63,8 +63,16 @@ const projects = [
     tech: ["Wordpress", "css", "Javascript",],
     liveUrl: "https://ezytravellers.com/",
   },
+  
+    {
+    title: "RD Entertainments",
+    description:
+      "Entertainments Website",
+    image:null,
+    tech: ["Wordpress", "css", "Javascript",],
+    liveUrl: "https://rd-entertainments.com/",
+  },
 
- 
 ];
 
 function Projects() {
