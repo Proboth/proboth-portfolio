@@ -42,7 +42,7 @@ Error generating stack: `+l.message+`
              text-white shadow-lg\r
              hover:shadow-indigo-500/40\r
              hover:-translate-y-1 hover:scale-[1.02]\r
-             transition-all duration-300`,children:"View Projects"}),w.jsx("a",{href:"/proboth-portfolio/Proboth_Ravihara_Resume_new.pdf",download:!0,onClick:()=>{window.gtag&&window.gtag("event","resume_download",{event_category:"engagement",event_label:"Resume Download"})},className:`px-6 py-3 rounded-md font-medium\r
+             transition-all duration-300`,children:"View Projects"}),w.jsx("a",{href:"/proboth-portfolio/Proboth_Ravihara_Resume_new.pdf",download:!0,onClick:()=>{window.gtag("event","resume_download")},className:`px-6 py-3 rounded-md font-medium\r
              bg-gradient-to-r from-indigo-600 to-purple-600\r
              text-white shadow-lg\r
              hover:shadow-indigo-500/40\r
