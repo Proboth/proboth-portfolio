@@ -151,7 +151,9 @@ export default function Skills() {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             Skills
           </h2>
-          <p className="text-gray-600 dark:text-gray-400 max-w-xl mx-auto">
+          <div className="mx-auto mt-4 h-[2px] w-20 bg-gradient-to-r from-indigo-500 to-purple-500" />
+
+          <p className="text-gray-600 dark:text-gray-400 max-w-xl mx-auto mt-5">
             Technologies, platforms, and tools I use to build scalable,
             production-ready applications.
           </p>

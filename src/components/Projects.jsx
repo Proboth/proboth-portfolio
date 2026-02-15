@@ -82,6 +82,7 @@ function Projects() {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
               Projects
             </h2>
+<div className="mx-auto mt-4 h-[2px] w-20 bg-gradient-to-r from-indigo-500 to-purple-500" />
 
             <p className="mt-3 text-gray-600 dark:text-gray-400 max-w-xl mx-auto">
               Selected real-world projects with production-grade architecture.
